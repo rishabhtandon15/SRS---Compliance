@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: srs-compliance-analyzer
+    env: python
+    buildCommand: "pip install -r requirements.txt -r api/requirements_api.txt"
+    startCommand: "python -m uvicorn api.server_prod:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

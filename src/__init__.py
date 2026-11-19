@@ -1,0 +1,76 @@
+"""
+SRS Compliance Analyzer - Version 0.4
+Core pipeline package with PDF extraction, semantic section matching, semantic rule matching, and compliance rule verification.
+"""
+
+from .analyzer import (
+    Requirement,
+    ReferenceSection,
+    ReferenceRule,
+    DocumentSection,
+    SectionMatchResult,
+    RuleMatchResult,
+    RuleCheckResult,
+    RequirementAudit,
+    ComplianceReport,
+    ReferenceStandard,
+    SemanticSectionMatcher,
+    SemanticMatcher,
+    SemanticRuleMatcher,
+    RequirementExtractor,
+    ComplianceAnalyzer,
+    ReportGenerator,
+    TemplatePoint,
+    ReferenceTemplate,
+    PointMatchResult,
+    TemplateComplianceReport,
+    TemplateContentChecker,
+)
+
+from .pdf_extractor import (
+    ScannedPDFError,
+    PDFExtractionResult,
+    PDFExtractor,
+    CandidateChunk,
+    EXPLICIT_ABSENCE_PATTERN,
+    extract_text_from_pdf,
+    extract_srs_from_pdf,
+    extract_standard_from_pdf,
+    extract_template_from_pdf,
+    extract_chunks_from_pdf,
+)
+
+__all__ = [
+    "Requirement",
+    "ReferenceSection",
+    "ReferenceRule",
+    "DocumentSection",
+    "SectionMatchResult",
+    "RuleMatchResult",
+    "RuleCheckResult",
+    "RequirementAudit",
+    "ComplianceReport",
+    "ReferenceStandard",
+    "SemanticSectionMatcher",
+    "SemanticMatcher",
+    "SemanticRuleMatcher",
+    "RequirementExtractor",
+    "ComplianceAnalyzer",
+    "ReportGenerator",
+    "TemplatePoint",
+    "ReferenceTemplate",
+    "PointMatchResult",
+    "TemplateComplianceReport",
+    "TemplateContentChecker",
+    "ScannedPDFError",
+    "PDFExtractionResult",
+    "PDFExtractor",
+    "CandidateChunk",
+    "EXPLICIT_ABSENCE_PATTERN",
+    "extract_text_from_pdf",
+    "extract_srs_from_pdf",
+    "extract_standard_from_pdf",
+    "extract_template_from_pdf",
+    "extract_chunks_from_pdf",
+]
+

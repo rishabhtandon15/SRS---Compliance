@@ -1,0 +1,16 @@
+{
+  "short_name": "SRS Analyzer",
+  "name": "AI-SRS Compliance Analyzer",
+  "description": "AI-powered SRS verification system combining deterministic checks and NLI semantic verification",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#4f46e5",
+  "display": "standalone"
+}
